@@ -28,8 +28,12 @@ __author__ = "Gabby"
 
 
 def remove_adjacent(nums):
-    # your code here
-    return
+    # 1. Num is 
+    non_repeatable = []
+    for num in nums:
+        if not num in non_repeatable: # previous index is equal to current iteration
+            non_repeatable.append(num)
+    return non_repeatable
 
 
 # E. zip_merge
@@ -57,8 +61,11 @@ def zip_merge(list1, list2):
 
 
 def empty_filter(list1):
-    # your code here
-    return
+    no_more_empties = []
+    for char in list1:
+        if not char == '' or not char == None:
+            no_more_empties.append(char)
+    return no_more_empties
 
 
 # G. linear_merge
