@@ -5,7 +5,8 @@ Kenzie assignment: List1
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Gabby: Got help from https://www.programiz.com/python-programming/methods/list/sort and helped Sondos"
+__author__ = "ariannagbasha: Got help from https://www.programiz.com/python-programming/methods/list/sort and helped Sondos"
+__references__ = "Shamelessly took from demo recordings"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -26,6 +27,7 @@ __author__ = "Gabby: Got help from https://www.programiz.com/python-programming/
 
 
 def match_ends(words):
+    # Transform into a list comprehension
     wordCount = 0
     for word in words:
         if(len(word) >= 2 and word.endswith(word[0])):
@@ -45,8 +47,14 @@ def match_ends(words):
 
 
 def front_x(words):
-    # your code here
-    return
+    x_list = []
+    another_list = []
+    for word in words:
+        if word[:1] == 'x':
+            x_list.append(word)
+        else:
+            another_list.append(word)
+    return sorted(x_list) + sorted(another_list)
 
 
 # C. sort_last
