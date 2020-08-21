@@ -5,7 +5,7 @@ Kenzie assignment: List2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Gabby"
+__author__ = "ariannagbasha"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -30,9 +30,9 @@ __author__ = "Gabby"
 def remove_adjacent(nums):
     # 1. Num is 
     non_repeatable = []
-    for num in nums:
-        if not num in non_repeatable: # previous index is equal to current iteration
-            non_repeatable.append(num)
+    for i in range(len(nums)):
+        if not nums[i] == nums[i - 1]:
+            non_repeatable.append(nums[i])
     return non_repeatable
 
 
@@ -47,9 +47,10 @@ def remove_adjacent(nums):
 
 
 def zip_merge(list1, list2):
-    # your code here
-    return
-
+    list3 = []
+    for i in range(len(list1)):
+        list3.append(list1[i] + list2[i])
+    return list3
 
 # F. empty_filter
 # Given a single list containing strings, empty strings, and
