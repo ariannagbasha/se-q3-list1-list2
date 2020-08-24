@@ -47,6 +47,7 @@ def match_ends(words):
 
 
 def front_x(words):
+    # Refactor into list comprehension
     x_list = []
     another_list = []
     for word in words:

@@ -28,7 +28,6 @@ __author__ = "ariannagbasha"
 
 
 def remove_adjacent(nums):
-    # 1. Num is 
     non_repeatable = []
     for i in range(len(nums)):
         if not nums[i] == nums[i - 1]:
@@ -64,7 +63,7 @@ def zip_merge(list1, list2):
 def empty_filter(list1):
     no_more_empties = []
     for char in list1:
-        if not char == '' or not char == None:
+        if char is not None and char != "":
             no_more_empties.append(char)
     return no_more_empties
 
@@ -81,7 +80,7 @@ def empty_filter(list1):
 
 
 def linear_merge(list1, list2):
-    # your code here
+    
     return
 
 
