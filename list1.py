@@ -5,7 +5,7 @@ Kenzie assignment: List1
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "ariannagbasha: Got help from https://www.programiz.com/python-programming/methods/list/sort and helped Sondos"
+__author__ = "ariannagbasha: Got help from programiz and helped Sondos"
 __references__ = "Shamelessly took from demo recordings"
 
 # Copyright 2010 Google Inc.
@@ -32,7 +32,7 @@ def match_ends(words):
     for word in words:
         if(len(word) >= 2 and word.endswith(word[0])):
             wordCount += 1
-    return wordCount 
+    return wordCount
 
 
 # B. front_x
@@ -67,6 +67,7 @@ def front_x(words):
 # Hint: use a custom key= function to extract the last element from each tuple.
 def takeLast(elem):
     return elem[-1]
+
 
 def sort_last(tuples):
     tuples.sort(key=takeLast)
