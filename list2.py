@@ -80,12 +80,12 @@ def empty_filter(list1):
 
 
 def linear_merge(list1, list2):
-    index_one = 0
-    index_two = 0
+    index_one = int()
+    index_two = int()
     words_list = []
     while index_one < len(list1) and index_two < len(list2):
         if list1[index_one] < list2[index_two]:
-            words_list.append(list1[index_two])
+            words_list.append(list1[index_one])
             index_one += 1
         else:
             words_list.append(list2[index_two])
